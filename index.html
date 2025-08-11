@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BARCON – Barkanov Construction</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="theme-default">
+    <header>
+      <nav class="navbar">
+        <div class="logo" data-i18n="logo">BARCON</div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" data-i18n="nav.home">Главная</a></li>
+          <li><a href="#services" data-i18n="nav.services">Услуги</a></li>
+          <li><a href="#portfolio" data-i18n="nav.portfolio">Портфолио</a></li>
+          <li><a href="#contacts" data-i18n="nav.contacts">Контакты</a></li>
+        </ul>
+        <div class="nav-actions">
+          <select id="language-switch" aria-label="language switch">
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+          </select>
+          <select id="theme-switch" aria-label="theme switch">
+            <option value="default" data-i18n="theme.default">Основная</option>
+            <option value="bw" data-i18n="theme.bw">Ч/Б</option>
+            <option value="pastel" data-i18n="theme.pastel">Пастель</option>
+          </select>
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <h1 data-i18n="hero.title">BARCON — Barkanov Construction</h1>
+        <p data-i18n="hero.subtitle">Архитектурное бюро будущего</p>
+        <a
+          class="btn contact-btn"
+          href="https://t.me/barcon_bot"
+          target="_blank"
+          data-i18n="buttons.contact"
+          >Связаться</a
+        >
+      </section>
+
+      <section id="services" class="section">
+        <h2 data-i18n="services.title">Услуги</h2>
+        <div class="cards">
+          <div class="card" data-service="architecture">
+            <img
+              src="https://source.unsplash.com/400x300?architecture"
+              alt="architecture"
+            />
+            <h3 data-i18n="services.architecture.title">
+              Архитектурные решения
+            </h3>
+            <p data-i18n="services.architecture.brief">
+              Современные и эргономичные здания
+            </p>
+          </div>
+          <div class="card" data-service="structure">
+            <img
+              src="https://source.unsplash.com/400x300?construction"
+              alt="construction"
+            />
+            <h3 data-i18n="services.structure.title">Конструктивные решения</h3>
+            <p data-i18n="services.structure.brief">Надежные конструкции</p>
+          </div>
+          <div class="card" data-service="visualization">
+            <img
+              src="https://source.unsplash.com/400x300?render"
+              alt="render"
+            />
+            <h3 data-i18n="services.visualization.title">
+              Визуализация экстерьера
+            </h3>
+            <p data-i18n="services.visualization.brief">
+              Фотореалистичные изображения
+            </p>
+          </div>
+          <div class="card" data-service="measurement">
+            <img
+              src="https://source.unsplash.com/400x300?blueprint"
+              alt="measurement"
+            />
+            <h3 data-i18n="services.measurement.title">Обмерные работы</h3>
+            <p data-i18n="services.measurement.brief">Точные замеры объектов</p>
+          </div>
+          <div class="card" data-service="supervision">
+            <img
+              src="https://source.unsplash.com/400x300?supervision"
+              alt="supervision"
+            />
+            <h3 data-i18n="services.supervision.title">Авторский надзор</h3>
+            <p data-i18n="services.supervision.brief">
+              Контроль реализации проекта
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section">
+        <h2 data-i18n="portfolio.title">Портфолио</h2>
+        <div class="cards">
+          <div class="card" data-portfolio="residential">
+            <img
+              src="https://source.unsplash.com/400x300?house"
+              alt="residential"
+            />
+            <h3 data-i18n="portfolio.residential.title">Жилые объекты</h3>
+          </div>
+          <div class="card" data-portfolio="commercial">
+            <img
+              src="https://source.unsplash.com/400x300?office"
+              alt="commercial"
+            />
+            <h3 data-i18n="portfolio.commercial.title">Коммерческие объекты</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="section">
+        <h2 data-i18n="contacts.title">Контакты</h2>
+        <p data-i18n="contacts.slogan">Свяжитесь с нами через Telegram</p>
+        <a
+          class="btn contact-btn"
+          href="https://t.me/barcon_bot"
+          target="_blank"
+          data-i18n="buttons.contact"
+          >Связаться</a
+        >
+        <div class="telegram-links">
+          <a
+            href="https://t.me/barcon_bot"
+            target="_blank"
+            data-i18n="contacts.bot"
+            >Telegram бот</a
+          >
+          <a
+            href="https://t.me/barcon_channel"
+            target="_blank"
+            data-i18n="contacts.channel"
+            >Telegram канал</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close" id="modal-close">&times;</span>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
